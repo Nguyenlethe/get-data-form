@@ -1,4 +1,7 @@
 @media (max-width:46.25em) {
+    .root{
+        height: 110vh;
+    }
     .from{
         width: 100%;
         overflow: hidden;
