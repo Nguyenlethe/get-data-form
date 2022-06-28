@@ -1,6 +1,7 @@
 @media (max-width:46.25em) {
     .root{
         height: 110vh;
+        overflow:auto;
     }
     .from{
         width: 100%;
@@ -26,6 +27,14 @@
     .my{
         box-shadow: none;
         margin: 50px 0;
+    }
+    .input-select{
+        padding-left: 12px;
+    }
+    .load-avata-placeholder {
+        line-height: 38px;
+        display: inline;
+        height: 38px;
     }
 }
 
