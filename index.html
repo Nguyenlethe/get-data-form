@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
+<body>
+   <div class="root">
+        <form class="from" action="">
+            <h2 class="heading">Điền thông tin để hoàn tất hồ sơ </h2>
+            <!-- Form text -->
+            <label class="label" for="">Full Name</label>
+            <input class="input test" autocomplete="off" placeholder="Nhập họ tên của bạn..."        type="text" name="name" id="">
+            <span class="error"></span>
+            <label class="label" for="">Email</label>
+            <input class="input test" autocomplete="off" type="text" placeholder="Nhập email của bạn..."  name="email" id="">
+            <span class="error"></span>
+            <label class="label" for="">Phone Number</label>
+            <input class="input test" autocomplete="off" placeholder="Nhập số điện thoại của bạn..." type="text" name="phone" id="">
+            <span class="error"></span>
+            <!-- Form select -->
+            <label class="label" for="">Address</label>
+            <select class="input-select test" name="select-village" >
+                <option class="selected-option" selected="selected" value="null">-- Chọn Tỉnh/Thành Phố --</option>
+                <option class="selected-option" value="Hà Nội">Hà Nội</option>
+                <option class="selected-option" value="Hải Dương">Hải Dương</option>
+                <option class="selected-option" value="Hưng Yên">Hưng Yên</option>
+                <option class="selected-option" value="Thái Bình">Thái Bình</option>
+                <option class="selected-option" value="Nam Định">Nam Định</option>
+                <option class="selected-option" value="Hòa Bình">Hòa Bình</option>
+                <option class="selected-option" value="Lào Cai">Lào Cai</option>
+                <option class="selected-option" value="Bắc Giang">Bắc Giang</option>
+                <option class="selected-option" value="Bắc Ninh">Bắc Ninh</option>
+                <option class="selected-option" value="Tuyên Quang">Tuyên Quang</option>
+            </select>
+            <span class="error" name="select"></span>
+            <!-- Form Radio -->
+            <label class="label" for="">Gender</label>
+            <div class="list-input-radio test">
+                <div class="item-radio-input">
+                    <label class="label-input-radio"for="male">Nam</label><br>
+                    <input type="radio" class="input-radio" name="Nam" id="male"  value="male">
+                </div>
+                <div class="item-radio-input">
+                    <label class="label-input-radio"for="Female">Nữ</label><br>
+                    <input type="radio" class="input-radio" name="Nữ" id="Female" value="Female">
+                </div>
+                <div class="item-radio-input">
+                    <label class="label-input-radio"for="Other">Khác</label>
+                    <input type="radio" class="input-radio " name="LGBT" id="Other"  value="Other">
+                </div>
+            </div>
+            <!-- Form Sở Thích -->
+            <span class="error" name="radio"></span>
+            <label class="label" for="">Interests</label>
+            <div class="list-input-checkbox">
+                <div class="item-checkbox-input">
+                    <label class="label-input-checkbox" for="1">Đá Bóng</label>
+                    <input type="checkbox" id="1" value="Đá Bóng" class="input-checkbox">
+                </div>
+                <div class="item-checkbox-input">
+                    <label class="label-input-checkbox" for="2">Ca Hát</label>
+                    <input type="checkbox" id="2" value="Ca Hát" class="input-checkbox">
+                </div>
+                <div class="item-checkbox-input">
+                    <label class="label-input-checkbox" for="3">Chơi Game</label>
+                    <input type="checkbox" id="3" value="Chơi Game" class="input-checkbox">
+                </div>
+                <div class="item-checkbox-input">
+                    <label class="label-input-checkbox" for="4">Đọc Sách</label>
+                    <input type="checkbox" id="4" value="Đọc Sách" class="input-checkbox">
+                </div>
+                <div class="item-checkbox-input">
+                    <label class="label-input-checkbox" for="5">Du Lịch</label>
+                    <input type="checkbox" id="5" value="Du Lịch" class="input-checkbox">
+                </div>
+                <div class="item-checkbox-input">
+                    <label class="label-input-checkbox" for="6">Ngủ</label>
+                    <input type="checkbox" id="6" value="Ngủ" class="input-checkbox">
+                </div>
+            </div>
+            <button class="btn" type="submit">Gửi Thông Tin</button>
+        </form>
+        <div class="my">
+        </div>
+   </div>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+html{
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bgr.jpg') top center / cover no-repeat;
+}
+.root.active .my{
+    display: block;  
+}
+.root.active .from{
+    display: none;
+}
+.root .my{
+    display: none; 
+}
+.from{
+    width: 500px;
+    padding: 60px 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, .7), 0 8px 16px rgba(255, 255, 255, .7);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00000075;
+}
+.input{
+    width: 100%;
+    padding: 0 12px;
+    height: 38px;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    outline: none;
+    color: #c9c9c9;
+    border: 1px solid #9c9c9c;
+    background: transparent;
+}
+.label{
+    font-size: 18px;
+    height: 18px;
+    margin: 20px 0 6px 0;
+    width: 100%;
+    font-weight: 500;
+    color: #c9c9c9;
+    text-shadow: 0 0.5px 0 #ccc, 0 0px 0 #c9c9c9, 0 0px 0 #bbb, 0 0px 0 #b9b9b9, 0 0px 0 #aaa;
+}
+.heading{
+    text-transform: uppercase;
+    font-size:22px;
+    margin: auto;
+    padding-bottom: 20px;
+    color: #c9c9c9;
+    font-weight: 500;
+    text-shadow: 0 0.5px 0 #ccc, 0 0px 0 #c9c9c9, 0 0px 0 #bbb, 0 0px 0 #b9b9b9, 0 0px 0 #aaa;
+}
+.list-input-radio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top:12px;
+}
+.item-radio-input{
+    display: flex;
+    align-items: center;
+}
+.input-radio{
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+.label-input-radio{
+    font-size:18px;
+    color: #c9c9c9;
+    text-shadow: 0 0.5px 0 #ccc, 0 0px 0 #c9c9c9, 0 0px 0 #bbb, 0 0px 0 #b9b9b9, 0 0px 0 #aaa;
+}
+.list-input-checkbox{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.item-checkbox-input{
+    width: 26%;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+.label-input-checkbox{
+    display: block;
+    font-size:18px;
+    color: #c9c9c9;
+    text-shadow: 0 0.5px 0 #ccc, 0 0px 0 #c9c9c9, 0 0px 0 #bbb, 0 0px 0 #b9b9b9, 0 0px 0 #aaa;
+}
+.input-checkbox{
+    width: 19px;
+    height: 19px;
+}
+.input-select{
+    width: 70%;
+    text-align: center;
+    height: 38px;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #dddfe2;
+    margin-right: 30%;
+    background-color: rgba(255, 0, 0, 0);
+    color: #c9c9c9;
+}
+.selected-option{
+    background-color: rgb(2 2 2);;
+    color: #c9c9c9;
+}
+.btn{
+    cursor: pointer;
+    width: 40%;
+    height: 42px;
+    margin: 50px auto auto auto;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #1e2022;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    color: white;
+}
+.btn:hover{
+    background-color: #a92400;
+}
+.error{
+    margin-top: 6px;
+    color: rgb(255, 17, 120);
+    font-weight: 500;
+}
+.my{
+    width: 420px;
+    padding: 12px ;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, .7), 0 8px 16px rgba(255, 255, 255, .7);
+    background-color:rgb(0 0 0 / 41%);
+    border-radius: 12px;
+}
+.information{
+    display: flex;
+    margin: 20px 0;
+}
+.information p{
+   font-weight: 500;
+   font-size: 18px;
+   color :#ffffffb5 ;
+}
+.information h3{
+    font-weight: 600;
+    font-size: 18px;
+    color :#ffffffb5 ;
+}
+.img{
+    position: relative;
+    padding-top: 128%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 2px;
+    border-top-right-radius:2px;
+    margin-bottom: 40px;
+}
+.information.end p{
+    min-width: 116px;
+}
+.information.end h3{
+    display: inline;
+}
