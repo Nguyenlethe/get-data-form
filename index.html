@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="./public/css/responsive.css">
 </head>
 <body>
-   <div class="root">
+    <div class="root">
+        <button class="custom-btn btn-12"><span>Click Me !</span><span>Create CV Now !</span></button>
         <form class="from" action="">
             <h2 class="heading">Điền thông tin để hoàn tất hồ sơ </h2>
             <!-- Form text -->
             <label class="label" for="">Full Name</label>
-            <input class="input test" autocomplete="off" placeholder="Nhập họ tên của bạn..."        type="text" name="name" id="">
+            <input class="input test" autocomplete="on" placeholder="Nhập họ tên của bạn..."        type="text" name="name" id="">
             <span class="error"></span>
             <label class="label" for="">Email</label>
-            <input class="input test" autocomplete="off" type="text" placeholder="Nhập email của bạn..."  name="email" id="">
+            <input class="input test" autocomplete="on" type="text" placeholder="Nhập email của bạn..."  name="email" id="">
             <span class="error"></span>
             <label class="label" for="">Phone Number</label>
-            <input class="input test" autocomplete="off" placeholder="Nhập số điện thoại của bạn..." type="text" name="phone" id="">
+            <input class="input test" autocomplete="on" placeholder="Nhập số điện thoại của bạn..." type="text" name="phone" id="">
             <span class="error"></span>
             <!-- Form select -->
             <label class="label" for="">Address</label>
@@ -38,7 +39,6 @@
                 <option class="selected-option" value="Tuyên Quang">Tuyên Quang</option>
             </select>
             <span class="error" name="select"></span>
-
             <label class="label" for="">Avata</label>
             <div class="load-avata">
                 <input type="file" name="file" id="">
@@ -46,25 +46,24 @@
                 <span class="load-avata-placeholder">Chọn file</span>
             </div>
             <span class="error" name="file"></span>
-
             <!-- Form Radio -->
             <label class="label" for="">Gender</label>
-            <div class="list-input-radio test">
+            <div class="list-input-radio">
                 <div class="item-radio-input">
                     <label class="label-input-radio"for="male">Nam</label><br>
-                    <input type="radio" class="input-radio" name="Nam" id="male"  value="male">
+                    <input type="radio" class="input-radio" name="gender" id="male"  value="Nam">
                 </div>
                 <div class="item-radio-input">
                     <label class="label-input-radio"for="Female">Nữ</label><br>
-                    <input type="radio" class="input-radio" name="Nữ" id="Female" value="Female">
+                    <input type="radio" class="input-radio" name="gender" id="Female" value="Nữ">
                 </div>
                 <div class="item-radio-input">
                     <label class="label-input-radio"for="Other">Khác</label>
-                    <input type="radio" class="input-radio " name="LGBT" id="Other"  value="Other">
+                    <input type="radio" class="input-radio " name="gender" id="Other"  value="Khác">
                 </div>
             </div>
-            <!-- Form Sở Thích -->
             <span class="error" name="radio"></span>
+            <!-- Form Sở Thích -->
             <label class="label" for="">Interests</label>
             <div class="list-input-checkbox">
                 <div class="item-checkbox-input">

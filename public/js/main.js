@@ -8,6 +8,7 @@ const error = $$('.error')
 const input = $$('.input')
 const inputChange  = $$('.test') 
 const wraperFile = $('.load-avata')
+const btnShowForm = $('.custom-btn')
 const inputRadio = $$('.input-radio')
 const inputSelect = $('.input-select')
 const inputFile = $('input[name="file"]')
@@ -16,12 +17,11 @@ const inputEmail = $('.input[name="email"]')
 const inputPhone = $('.input[name="phone"]')
 const errorRadio = $('.error[name="radio"]')
 const errorSelect = $('.error[name="select"]')
-const errorFile = $('.error[name="file"]')
+const errorFile = $('span[name="file"]')
 const placeholderInputFile = $('.load-avata-placeholder')
 const regNumber = /^(0[234][0-9]{8}|1[89]00[0-9]{4})$/;
 const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let MyCv = {interests: []}
-
 window.onkeydown = (e) => {
     if(e.keyCode === 123){
         e.preventDefault()
@@ -129,4 +129,13 @@ inputChange.forEach((element, index)=> {
 wraperFile.onclick = () => {
     errorFile.innerHTML = ''
     inputFile.click()
+}
+inputRadio.forEach((element, index)=> {
+    element.onclick = () => {
+        errorRadio.innerHTML = ''
+    }
+})
+btnShowForm.onclick = () => {
+    from.style.transform = 'translateY(0)'
+    btnShowForm.style.display = 'none'
 }
