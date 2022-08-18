@@ -22,11 +22,7 @@ const placeholderInputFile = $('.load-avata-placeholder')
 const regNumber = /^(0[234][0-9]{8}|1[89]00[0-9]{4})$/;
 const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let MyCv = {interests: []}
-window.onkeydown = (e) => {
-    if(e.keyCode === 123){
-        e.preventDefault()
-    }
-}
+
 body.oncontextmenu = (e) => {
     e.preventDefault()
 }
